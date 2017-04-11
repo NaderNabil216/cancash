@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
         } else {
             Log.d("nader", "else");
             Log.d("nader", "log zyada malosh lazma");
+            Log.d("nader", "log zyada malosh lazma tany");
             finishAffinity();
             System.exit(0);
         }
