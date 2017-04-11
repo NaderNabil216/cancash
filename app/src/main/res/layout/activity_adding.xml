@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_adding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/select_city_text_ahmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City" />
+
+    <Spinner
+        android:id="@+id/city_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/select_city_text_ahmed" />
+    <TextView
+        android:id="@+id/the_select_bundle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bundle_spin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Select Bundle" />
+
+    <Spinner
+        android:id="@+id/bundle_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_spin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/the_select_bundle_text" />
+
+
+    <TextView
+        android:id="@+id/select_shift_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/the_select_bundle_text"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="Select Shift" />
+
+    <Spinner
+        android:id="@+id/shift_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bundle_spin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/select_shift_text" />
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/select_shift_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subscription Title" />
+    <TextView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/title_et"
+        android:layout_centerHorizontal="true"
+        android:text="Select Your Location On Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/txt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    <Button
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/txt"
+        android:text="Add Subscription"
+        android:id="@+id/btn_add"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

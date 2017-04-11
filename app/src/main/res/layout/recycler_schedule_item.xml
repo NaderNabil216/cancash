@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:id="@+id/relative_layout"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapmarker"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="5dp" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/marker"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textView_title" />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+        android:layout_below="@id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/marker"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/textView_map_location" />
+</RelativeLayout>
